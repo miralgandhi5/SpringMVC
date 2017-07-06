@@ -1,7 +1,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html lang="en">
+<body lang="en">
 <head>
 <title>Maven + Spring MVC</title>
  
@@ -10,24 +10,24 @@
 <link href="${bootstrapCss}" rel="stylesheet" />
 <link href="${coreCss}" rel="stylesheet" />
 </head>
- 
+</body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
 	<div class="navbar-header">
-		<a class="navbar-brand" href="#">Spring 3 MVC Project</a>
+		<a class="navbar-brand" href="#">${message}</a>
 	</div>
   </div>
 </nav>
- 
+
 <div class="jumbotron">
   <div class="container">
 	<h1>${title}</h1>
-	<p>
-		<c:if test="${not empty name}">
-			Hello ${name}
+	<p
+		<c:if test="${not empty msg}">
+			Hello ${msg}
 		</c:if>
  
-		<c:if test="${empty name}">
+		<c:if test="${empty msg}">
 			Welcome Welcome!
 		</c:if>
     </p>
@@ -55,11 +55,15 @@
 		</p>
 	</div>
 	<div class="col-md-4">
-		<h2>Heading</h2>
+		<h2>form</h2>
+		    <form method="post" action="user">
+			<input name="name" type="text"/><br>
+			<p>
+				<input type="submit" class="btn btn-default" href="#" role="button"/>
+			</p>
+		</form>
 		<p>ABC</p>
-		<p>
-			<a class="btn btn-default" href="#" role="button">View details</a>
-		</p>
+
 	</div>
   </div>
  
