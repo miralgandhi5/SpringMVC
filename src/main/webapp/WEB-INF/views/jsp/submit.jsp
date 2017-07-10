@@ -11,6 +11,13 @@
     <title>Submit</title>
 </head>
 <body>
-Hello ${user.name}
+<h2>form</h2>
+<form method="post" action="user">
+    <input name="firstName" placeholder="firstName" type="text"/><br>
+    <input name="lastName" placeholder="lastName" type="text"/><br>
+    <p>
+        <input type="submit" class="btn btn-default" href="#" role="button"/>
+    </p>
+</form>
 </body>
 </html>
