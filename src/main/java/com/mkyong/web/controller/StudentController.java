@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 public class StudentController extends MultiActionController {
 
 
-	protected ModelAndView dummy(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws Exception {
+	public ModelAndView dummy(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws Exception {
 		ModelAndView modelAndView=new ModelAndView("index");
 		return modelAndView;
 
