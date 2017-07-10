@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Submit</title>
+    <h3>${heading}</h3>
 </head>
 <body>
 <h2>form</h2>
