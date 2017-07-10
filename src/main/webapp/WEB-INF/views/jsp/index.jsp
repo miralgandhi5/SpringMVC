@@ -11,5 +11,5 @@
     <title></title>
 </head>
 <body>
-Hello from index.gsp
+${msg}
 </body>
