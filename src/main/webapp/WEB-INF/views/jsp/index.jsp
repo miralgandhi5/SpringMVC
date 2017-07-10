@@ -11,5 +11,8 @@
     <title></title>
 </head>
 <body>
-${msg}
+FirstName:
+${firstName}
+LastName:
+${lastName}
 </body>
