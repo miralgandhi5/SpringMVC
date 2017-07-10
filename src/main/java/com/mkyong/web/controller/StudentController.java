@@ -10,10 +10,12 @@ import org.springframework.web.servlet.ModelAndView;
 public class StudentController {
 
 
-    @RequestMapping("/")
     @ResponseBody
-   String action() {
-        return "Hello World";
+    @RequestMapping("/")
+    ModelAndView index() {
+        ModelAndView modelAndView = new ModelAndView("index");
+        modelAndView.addObject("msg", "Hello World");
+        return modelAndView;
     }
 
 
