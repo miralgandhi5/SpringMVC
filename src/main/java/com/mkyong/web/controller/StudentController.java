@@ -12,8 +12,8 @@ public class StudentController {
 
     @RequestMapping("/")
     @ResponseBody
-    ModelAndView index() {
-        return new ModelAndView("index string");
+   String action() {
+        return "Hello World";
     }
 
 
